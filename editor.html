@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>CodeProject Template Items Editor</title>
+    
+    <style type="text/css">
+        #TextArea1
+        {
+            height: 128px;
+            width: 315px;
+        }
+        #Text2
+        {
+            width: 315px;
+        }
+        #Text1
+        {
+            width: 315px;
+        }
+        #TextBody
+        {
+            height: 180px;
+            width: 376px;
+        }
+        #TextSubject
+        {
+            width: 375px;
+        }
+        #TextTitle
+        {
+            width: 375px;
+        }
+        #Select1
+        {
+            width: 350px;
+            height: 180px;
+        }
+        #selectTemplates
+        {
+            width: 465px;
+            height: 243px;
+        }
+        .style1
+        {
+            width: 465px;
+        }
+        .style2
+        {
+            width: 377px;
+        }
+        .style3
+        {
+            height: 174px;
+            width: 82px;
+        }
+        .style4
+        {
+            width: 377px;
+            height: 174px;
+        }
+        .style5
+        {
+            width: 107px;
+        }
+        .style6
+        {
+            width: 82px;
+        }
+        .style7
+        {
+            width: 465px;
+            height: 252px;
+        }
+        .style9
+        {
+            font-size: x-small;
+            font-style: italic;
+            text-align: right;
+        }
+    </style>
+<link type="text/css" href="css/custom-theme/jquery-ui-1.8.2.custom.css" rel="Stylesheet" />
+
+<script type="text/javascript" src="js/json2-min.js"></script>
+<script type="text/javascript" src="jquery/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui-1.8.2.custom.min.js"></script>
+<script type="text/javascript" src="js/cptemplates.js"></script>
+</head>
+
+<body onload="initEditor()" style="background-color: #ffcc66; width: 470; height: 400">
+<center>
+    <img alt="CodeProject Logo" src="images/codeproject468x60.gif" /><br />
+    <span style="font-size: medium;">CodeProject Template Editor</span>
+</center>
+    <div id="templateLoading">Loading elements..........<img src="css/custom-theme/images/ui-anim_basic_16x16.gif" alt="Loading Data Animation"/></div>
+    <div id="templateListing">
+        <div id="templateFilter" style="float: right">Template Filter: <select id="selectFilter" name="selectFilter">
+        <option>All</option>
+        <option>Message</option>
+        <option>Answer</option>
+        <option>Snippet</option>
+        </select></div>
+    <table>
+    <tr><td class="style7"><select id="selectTemplates" multiple="multiple" name="selectTemplates"></select></td></tr>
+    <tr><td class="style1">
+        <input id="buttonAdd" name="buttonAdd" title="Add New Template" type="button" value="Add" />
+        <input id="buttonEdit" name="buttonEdit" title="Edit Selected Template" type="button" value="Edit" />
+        <input id="buttonClone" name="buttonClone" title="Clone Selected Template" type="button" value="Clone" />
+        <input id="buttonDelete" name="buttonDelete" title="Delete Selected Template" type="button" value="Delete" />
+     </td></tr>
+    </table>
+    </div>
+   <div id="templateEdit">
+   <table>
+   <tr><td class="style6">Type :</td><td colspan="2" class="style2">
+       <input id="RadioTypeMessage" checked="true" name="RadioType" 
+                           title="Message Item" type="radio" value="Message" />Message
+       <input id="RadioTypeAnswer" name="RadioType" 
+                           title="Answer Item" type="radio" value="Answer" />Answer
+       <input id="RadioTypeSnippet" name="RadioType" 
+                           title="Snippet Item" type="radio" value="Snippet" />Snippet
+       </td></tr>
+   <tr><td class="style6">Title :</td><td colspan="2" class="style2"><input id="TextTitle" type="text" /></td></tr>
+   <tr><td class="style6">Subject :</td><td colspan="2" class="style2">
+       <input id="TextSubject" type="text" 
+           alt="Subject field is used by Message Type only" /></td></tr>
+   <tr><td class="style3">Body :</td><td colspan="2" class="style4">
+       <textarea id="TextBody" name="S1"></textarea></td></tr>
+   <tr><td colspan="3" class="style5">
+       <input id="buttonCancel" type="button" 
+            value="Cancel" name="buttonCancel" title="Cancel Changes" />
+        <input id="buttonSave" name="buttonSave" title="Save Template" type="button" 
+            value="Save" /></td></tr>
+   </table>
+   </div>
+    <p class="style9">Version 1.1 - Dave Auld (c) 2011</p>
+</body>
+</html>

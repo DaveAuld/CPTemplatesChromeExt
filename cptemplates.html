@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>CodeProject Template Items - Background Page</title>
+        <script type="text/javascript">
+
+            // Called when the url of a tab changes.
+            function checkForTargetMessageEditorUrl(tabId, changeInfo, tab) {
+                // Check if the address contains the Message Editor URL;
+                if (tab.url.indexOf(".codeproject.com/script/Forums/Edit.aspx?") > -1) {
+                    // ... show the page action.
+                    chrome.pageAction.show(tabId);
+                }
+                // Check if the address contains the Question URL;
+                if (tab.url.indexOf(".codeproject.com/Questions/") > -1) {
+                    // ... show the page action.
+                    chrome.pageAction.show(tabId);
+                }
+                
+            };
+
+            // Add a handler to listen for Address Bar changes in the browser, set the callback function
+            chrome.tabs.onUpdated.addListener(checkForTargetMessageEditorUrl);            
+    </script>
+</head>
+
+<body bgcolor="#ffcc66">
+    <p>CodeProject Template Items Background Page Process - Nothing to see, move along please.</p>
+</body>
+</html>

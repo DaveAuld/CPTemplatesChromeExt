@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>CodeProject Template Selector</title>
+    
+    <style type="text/css">
+        #TextArea1
+        {
+            height: 128px;
+            width: 315px;
+        }
+        #Text2
+        {
+            width: 315px;
+        }
+        #Text1
+        {
+            width: 315px;
+        }
+        #TextBody
+        {
+            height: 180px;
+            width: 376px;
+        }
+        #TextSubject
+        {
+            width: 375px;
+        }
+        #TextTitle
+        {
+            width: 375px;
+        }
+        #Select1
+        {
+            width: 350px;
+            height: 180px;
+        }
+        #selectTemplates
+        {
+            width: 465px;
+            height: 243px;
+        }
+        .style1
+        {
+            width: 465px;
+        }
+        .style7
+        {
+            width: 465px;
+            height: 252px;
+        }
+        .style9
+        {
+            font-size: x-small;
+            font-style: italic;
+            text-align: right;
+        }
+    </style>
+<link type="text/css" href="css/custom-theme/jquery-ui-1.8.2.custom.css" rel="Stylesheet" />
+<script type="text/javascript" src="js/json2-min.js"></script>
+<script type="text/javascript" src="jquery/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui-1.8.2.custom.min.js"></script>
+<script type="text/javascript" src="js/cptemplates.js"></script>
+</head>
+
+<body onload="initSelector()" style="background-color: #ffcc66; width: 470; height: 400">
+<center>
+    <img alt="CodeProject Logo" src="images/codeproject468x60.gif" /><br />
+    <span style="font-size: medium;">CodeProject Template Selector</span>
+</center>
+    <div id="templateLoading">Loading elements..........<img src="css/custom-theme/images/ui-anim_basic_16x16.gif" alt="Loading Data Animation"/></div>
+    <div id="templateListing">
+    <div id="templateFilter" style="float: right">Template Filter: <select id="selectFilter" name="selectFilter">
+        <option>Auto</option>
+        <option>All</option>
+        <option>Message</option>
+        <option>Answer</option>
+        <option>Snippet</option>
+    </select></div>
+    <table>
+    <tr><td class="style7"><select id="selectTemplates" multiple="multiple" name="selectTemplates"></select></td></tr>
+    <tr><td>
+        <input id="buttonSelect" name="buttonSelect" title="Select Template" type="button" value="Select" />
+     </td></tr>
+    </table>
+    </div>
+    <p class="style9">Version 1.1 - Dave Auld (c) 2011</p>
+</body>
+</html>
