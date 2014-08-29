@@ -1,17 +1,25 @@
 {
-  "name": "CodeProject Template Items",
-  "version": "1.1",
-  "description": "Chrome Extension to provide CodeProject template items.",
-  "icons":{"48":"images/bob48.png", "128":"images/bob128.png"},	//Define any icon sizes and the files that you want to use with them. 48/128 etc.
-  "background_page": "cptemplates.html",
-  "page_action": {
-    "default_icon": "images/bob.png",                           // image to show in the address bar
-    "default_title": "CodeProject: Insert Template Items",      // text to show in the tooltip
-    "default_popup": "selector.html"                            // template selector page
-  },
-  "options_page": "editor.html",			// Page to handle the options for the extension, used to edit the templates
-  "permissions": [
-    "tabs", "http://*.codeproject.com/"             
-  ]
-  //"update_url": "http://www.dave-auld.net/ChromeExtensions/CPTemplatesChromeExt/updates.xml"		// Auto Update location
+    "manifest_version": 2,
+    "name": "CodeProject Template Items",
+    "short_name": "CPTemplates",
+    "version": "2.0",
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com 'unsafe-eval'; object-src 'self' ",
+    "description": "Chrome Extension to provide CodeProject template items.",
+    "icons": {
+        "48": "images/bob48.png",
+        "128": "images/bob128.png"
+    },
+    "background": {
+        "scripts": [ "js/background.js" ]
+    },
+    "page_action": {
+        "default_icon": "images/bob.png",
+        "default_title": "CodeProject: Insert Template Items",
+        "default_popup": "selector.html"
+    },
+    "options_page": "editor.html",
+    "permissions": [
+        "tabs",
+        "http://*.codeproject.com/"
+    ]
 }
