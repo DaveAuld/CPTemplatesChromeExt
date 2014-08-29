@@ -1,13 +1,17 @@
-﻿/// <reference path="/jquery/jquery-1.6.1-vsdoc.js" />
-/// <reference path="/js/json2-min.js" />
-
-// CodeProject Template Items Chrome Extension
+﻿// CodeProject Template Items Chrome Extension
 // Author: David Auld (c) 2011
-// Version 1.1
+// Version 2.0
+
+// For more write up see: http://www.codeproject.com/Articles/244083/Google-Chrome-Extension-CodeProject-Template-Items
 
 // ----------------------------------------------------------------------
 // Revision Changes
 // ----------------------------------------------------------------------
+//
+//  Version 2.0 (29th August 2014)
+//  FIX: migrated to Google Chrome Extensions Manfist V2 requirements. No new functionality.
+//  UPG: Upgraded jQuery to v1.11.1
+//  ADD: Added basic Google Analytics tracking - This is to know if people are using and whether to continue supporting or kill off.
 //
 //  Version 1.1 (16th September 2011)
 //  FIX: initStorage element name fixed
@@ -17,7 +21,6 @@
 //  ADD: Editor Type Filtering
 //  ADD: Selector Type Filtering
 // ----------------------------------------------------------------------
-
 
 //Local variables
 var templateStore = new Array();
