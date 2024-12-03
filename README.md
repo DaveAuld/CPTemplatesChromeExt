@@ -1,6 +1,9 @@
 CPTemplatesChromeExt
 ====================
 
+### 3rd December 2024 UPDATE:
+### With CodeProject effectively shutdown to new contributions and entered Read-Only mode. This extension is no longer of any use. So it is unlikely to ever be updated or re-worked.
+---
 Google Chrome Extension - CodeProject Template Items
 
 If you are a regular user of CodeProject, or maybe an article moderator, mentor, or even spend your time answering questions in the Q&A section, how many times have you found yourself posting the same thing? How many times have you found yourself heading over to the FAQ list to copy the link to the Article FAQ? Once, twice, ten times? What about going to find a previous post you have made to copy that and use again to save typing it all again?
